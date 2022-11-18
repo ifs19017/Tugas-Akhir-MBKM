@@ -11,14 +11,29 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}"
     />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='bootstrap/css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
     <nav
       class="navbar navbar-dark navbar-expand-md shadow"
-      style="background: #3591ae"
+      style="background: #738239"
     >
       <div class="container">
+        <img
+          src="{{ url_for('static', filename='img/logo asimo.png') }}"
+          alt="logo asimo"
+          style="width: 68px; height: 68px; margin-right: 20px"
+        />
         <a class="navbar-brand" href="{{ url_for('home') }}">Kelompok 1 Asimo</a
         ><button
           data-toggle="collapse"
@@ -39,23 +54,23 @@
             </li>
             <li class="nav-item">
               <a
-                class="nav-link {% if judul=='Tentang' %} active {% endif %}"
-                href="{{ url_for('tentang') }}"
-                >Tentang</a
+                class="nav-link {% if judul=='Aplikasi' %} active {% endif %}"
+                href="{{ url_for('aplikasi') }}"
+                >Aplikasi</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link {% if judul=='Masuk' %} active {% endif %}"
-                href="{{ url_for('masuk') }}"
-                >Masuk</a
+                class="nav-link {% if judul=='Informasi' %} active {% endif %}"
+                href="{{ url_for('informasi') }}"
+                >Informasi</a
               >
             </li>
             <li class="nav-item">
               <a
-                class="nav-link {% if judul=='Daftar' %} active {% endif %}"
-                href="{{ url_for('daftar') }}"
-                >Daftar</a
+                class="nav-link {% if judul=='Kontak' %} active {% endif %}"
+                href="{{ url_for('kontak') }}"
+                >Kontak</a
               >
             </li>
           </ul>
@@ -83,6 +98,76 @@
         </div>
       </div>
     </div>
+
+    <!-- Open Footer -->
+    <footer id="footer">
+      <div class="footer-atas">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 footer-contact">
+              <h3>Contact us!</h3>
+              <p>
+                Orbit Future Academy (OFA) <br />
+                AI Mastery Program <br />
+                Kelas Asimo - Kelompok 1 <br />
+              </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Academic</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">Subjecs</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i> <a href="#">lecturers</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Populer Subjects</h4>
+              <ul>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Data Science</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Computer Vision</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Natural Language Processing</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Reinforcement Learning</a>
+                </li>
+                <li>
+                  <i class="bx bx-chevron-right"></i>
+                  <a href="#">Deployment</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bawah">
+        <div class="container d-md-flex py-4">
+          <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+              &copy; Copyright
+              <strong><span>Kelompok 1 - Asimo</span></strong> [ AI Program
+              Mastery (Batch 3) - Orbit Future Academy]
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
     <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
     <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
   </body>

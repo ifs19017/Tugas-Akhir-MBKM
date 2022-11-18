@@ -5,43 +5,43 @@ app = Flask(__name__)
 konten = [
     {
     'penulis': 'Montana Gurning',
-    'judul': 'Postingan Pertama',
-    'sinopsis': 'Ini adalah postingan pertama',
-    'isi': 'Ini adalah isi dari postingan pertama',
+    'judul': 'Anggota Kelompok Pertama',
+    'sinopsis': 'Ini adalah Anggota Kelompok pertama',
+    'isi': 'Ini adalah isi dari Anggota Kelompok pertama',
     'tanggal': '12 Desember 2020',
-    'jam': '16.00'
+    'jobdesc': 'Deployment'
     },
     {
     'penulis': 'Alex Muhamad Kasiba',
-    'judul': 'Postingan Kedua',
-    'sinopsis': 'Ini adalah postingan kedua',
-    'isi': 'Ini adalah isi dari postingan kedua',
+    'judul': 'Anggota Kelompok Kedua',
+    'sinopsis': 'Ini adalah Anggota Kelompok kedua',
+    'isi': 'Ini adalah isi dari Anggota Kelompok kedua',
     'tanggal': '13 Desember 2020',
-    'jam': '18.00'
+    'jobdesc': 'Data Scrapping'
     },
     {
     'penulis': 'Muhammad Farid Al Hayat',
-    'judul': 'Postingan Ketiga',
-    'sinopsis': 'Ini adalah postingan ketiga',
-    'isi': 'Ini adalah isi dari postingan ketiga',
+    'judul': 'Anggota Kelompok Ketiga',
+    'sinopsis': 'Ini adalah Anggota Kelompok ketiga',
+    'isi': 'Ini adalah isi dari Anggota Kelompok ketiga',
     'tanggal': '14 Desember 2020',
-    'jam': '20.00'
+    'jobdesc': 'Feature Engineering'
     },
     {
     'penulis': 'Putri Ekarani',
-    'judul': 'Postingan Keempat',
-    'sinopsis': 'Ini adalah postingan keempat',
-    'isi': 'Ini adalah isi dari postingan keempat',
+    'judul': 'Anggota KelompokKeempat',
+    'sinopsis': 'Ini adalah Anggota Kelompok keempat',
+    'isi': 'Ini adalah isi dari Anggota Kelompok keempat',
     'tanggal': '15 Desember 2020',
-    'jam': '13.00'
+    'jobdesc': 'Modelling & Visualisasi'
     },
     {
     'penulis': 'Rein Aisyah',
-    'judul': 'Postingan Kelima',
-    'sinopsis': 'Ini adalah postingan kelima',
-    'isi': 'Ini adalah isi dari postingan kelima',
+    'judul': 'Anggota KelompokKelima',
+    'sinopsis': 'Ini adalah Anggota Kelompok kelima',
+    'isi': 'Ini adalah isi dari Anggota Kelompok kelima',
     'tanggal': '16 Desember 2020',
-    'jam': '14.00'
+    'jobdesc': 'Text Processing'
     }
 ]
 
@@ -49,18 +49,18 @@ konten = [
 def home():
     return render_template("home.html", konten=konten, judul='Beranda')
 
-@app.route('/tentang/')
-def tentang():
-    return render_template("tentang.html")
+@app.route('/aplikasi/')
+def aplikasi():
+    return render_template("aplikasi.html")
 # , judul='Tentang'
 
-@app.route('/masuk/')
-def masuk():
-    return render_template("masuk.html")
+@app.route('/informasi/')
+def informasi():
+    return render_template("informasi.html")
 
-@app.route('/daftar/')
-def daftar():
-    return render_template("daftar.html")
+@app.route('/kontak/')
+def kontak():
+    return render_template("kontak.html")
 
 if __name__ == '__main__':
     app.run(debug=True, port=2812)

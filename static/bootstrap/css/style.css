@@ -1,0 +1,28 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #ffffff;
+  font-size: 14px;
+  background: #343331;
+  margin-top: 5px;
+}
+
+#footer .footer-atas .footer-contact {
+  padding: 60px 0 30px 0;
+  /* background: #f9faf9; */
+}
+
+#footer .footer-atas .footer-links {
+  padding: 60px 0 30px 0;
+  /* background: #b2b2af; */
+  /* background: #f9faf9; */
+}
+
+#footer .footer-bawah {
+  color: black;
+  /* padding: 0px 0 0px 0; */
+  background: #f3e8d2;
+  /* background: #b2b2af; */
+  /* background: #f9faf9; */
+}
